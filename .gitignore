@@ -2,6 +2,7 @@
 node_modules/
 unpackage/
 dist/
+src/api/data.js
 
 # local env files
 .env.local
