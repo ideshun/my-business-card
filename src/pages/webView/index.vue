@@ -1,20 +1,24 @@
 <template>
 	<view class="content">
-		<u-cell-group>
-			<u-cell-item icon="setting-fill" title="个人设置"></u-cell-item>
-			<u-cell-item icon="integral-fill" title="会员等级" value="新版本"></u-cell-item>
-		</u-cell-group>
+		<web-view :src="url"></web-view>
 	</view>
 </template>
 
 <script>
+	import { myCard } from '@/api/data'
 	export default {
 		data() {
 			return {
+				url: '',
 			}
 		},
-		onLoad() {
-
+		onLoad(e) {
+			this.url = e.url
+			if (e.title) {
+				uni.setNavigationBarTitle({
+					title: e.title
+				});
+			}
 		},
 		methods: {
 
@@ -23,5 +27,5 @@
 </script>
 
 <style lang="scss" scoped>
-@import 'index.scss'
+	@import 'index.scss'
 </style>
