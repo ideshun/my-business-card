@@ -1,0 +1,13 @@
+.cell {
+  &-box {
+    box-shadow: 0 0 18rpx rgba(0, 0, 0, 0.2);
+  }
+  &-item {
+    &-tag {
+      margin-left: 16rpx;
+      /deep/ .u-tag {
+        padding: 6rpx 10rpx;
+      }
+    }
+  }
+}

@@ -32,7 +32,7 @@
   &-box {
     width: 100%;
     position: relative;
-    top: 28rpx;
+    top: 20rpx;
     display: flex;
     justify-content: space-between;
     color: #eeac64;
@@ -59,7 +59,7 @@
       font-size: 44rpx;
     }
     &-position {
-      margin: 12rpx 0 6rpx;
+      margin: 10rpx 0 6rpx;
     }
     &-age {
       color: #999899;
@@ -92,5 +92,12 @@
     display: flex;
     justify-content: space-around;
     padding-bottom: 20px;
+  }
+  &-tips {
+    position: relative;
+    top: -30rpx;
+    font-size: 24rpx;
+    color: #999999;
+    padding-left: 50rpx;
   }
 }
